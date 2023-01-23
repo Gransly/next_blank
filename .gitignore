@@ -1,0 +1,18 @@
+# ide
+.vscode
+.idea
+*.log
+
+#node
+node_modules/
+.rollup.cache
+tsconfig.tsbuildinfo
+lib/
+!packages/core/utility-types/lib
+
+#tests
+**/coverage/
+
+#Next
+.next
+
