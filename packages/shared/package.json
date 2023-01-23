@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo/shared",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Sergey Antonyuk <s.antonyuk@white-soft.ru>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.thewhite.ru/serenity/sandbox/ws-ssr-cloud-blank-fe.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/shared.test.js"
+  }
+}
