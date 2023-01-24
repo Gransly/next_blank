@@ -1,0 +1,36 @@
+$strict-mode: false;
+
+$config-white: #ffffff;
+$config-black: #1c1c1c;
+
+$theme-config: (
+  // @formatter:off
+  grayscale: (
+    type: 'single',
+    colors: (
+      // [ составной цвет, [ прозрачность, прозрачность:hover, прозрачность:active ]]...,
+      // @ - префикс цвета палитры (например, system-blue),
+      // % - префикс коренного цвета темы
+      content-1: [['%-content',    [100%          ]]                       ],
+      content-2: [['%-background', [ 30%          ]], ['%-content', [100%]]],
+      content-3: [['%-background', [ 60%          ]], ['%-content', [100%]]],
+      line:      [['%-background', [ 85%, 88%, 90%]], ['%-content', [100%]]],
+      bg-3:      [['%-background', [ 95%, 90%, 92%]], ['%-content', [100%]]],
+      bg-2:      [['%-background', [ 97%, 92%, 94%]], ['%-content', [100%]]],
+      bg-1:      [['%-background', [100%, 94%, 96%]], ['%-content', [100%]]]
+    )
+  ),
+  system: (
+    type: 'foreach',
+    colors: (
+      //                                                 ↓ можно везде через '%', '@' для эксперимента
+      base: [['grayscale-bg-1',      [ 0%,  6%, 12%]], ['%',              [100%]]],
+      a20:  [['grayscale-content-1', [20%, 26%, 32%]], ['@-base',         [100%]]],
+      a40:  [['grayscale-content-1', [40%, 46%, 52%]], ['@-base',         [100%]]],
+      a60:  [['grayscale-content-1', [60%, 66%, 72%]], ['@-base',         [100%]]],
+      line: [['grayscale-bg-1',      [80%, 86%, 92%]], ['%',              [100%]]],
+      bg:   [['%',                   [10%,  8%,  6%]], ['grayscale-bg-1', [100%]]]
+    )
+  )
+  // @formatter:on
+);

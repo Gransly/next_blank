@@ -1,11 +1,11 @@
-# `shared`
+# `ui-kit`
 
 > TODO: description
 
 ## Usage
 
 ```
-const shared = require('shared');
+const uiKit = require('ui-kit');
 
 // TODO: DEMONSTRATE API
 ```
