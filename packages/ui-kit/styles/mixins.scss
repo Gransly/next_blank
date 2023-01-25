@@ -73,17 +73,6 @@
   // todo: add breakpoints reduction
 }
 
-// слабое уменьшение шрифта с уменьшением ширины экрана (для более мелкого текста)
-@mixin font-weak-reduction($initial-font-size, $initial-line-height) {
-  $first-multiplier: 0.9;
-  $second-multiplier: 0.85;
-
-  font-size: $initial-font-size;
-  line-height: $initial-line-height;
-
-  // todo: add breakpoints reduction
-}
-
 @mixin color-svg($color) {
   color: $color;
 

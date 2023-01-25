@@ -1,3 +1,5 @@
-const withTM = require('next-transpile-modules')([ '@monorepo/ui-kit' ]); // pass the modules you would like to see transpiled
+const nextConfig = {
+    transpilePackages: [ '@monorepo/ui-kit' ],
+};
 
-module.exports = withTM({ reactStrictMode: true });
+module.exports = nextConfig;
