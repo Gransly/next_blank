@@ -9,9 +9,6 @@ export default function NavBar() {
             <li>
                 <Link href={'/about'}>About Us</Link>
             </li>
-            <li>
-                <Link href={'/imagePage'}>Image Post</Link>
-            </li>
         </ul>
     );
 }
