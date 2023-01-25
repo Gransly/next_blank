@@ -5,7 +5,7 @@
 
 ## Как начать разработку?
 Lerna [скачает](https://github.com/lerna/lerna/tree/main/commands/bootstrap#readme) все зависимости и перенесет по пакетам
-```
+```bash
 npm run bootstrap
 ```
 
