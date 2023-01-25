@@ -5,7 +5,7 @@
     "lerna": "6.4.1"
   },
   "scripts": {
-    "bootstrap": "npm install; lerna bootstrap;",
+    "bootstrap": "lerna bootstrap",
     "start": "lerna run start --parallel",
     "start:user": "node -r ./dotenv.config.js node_modules/.bin/lerna.cmd run --scope user --stream dev",
     "build:user": "node -r ./dotenv.config.js node_modules/.bin/lerna.cmd run --scope user --stream build",
