@@ -8,9 +8,22 @@ Lerna [скачает](https://github.com/lerna/lerna/tree/main/commands/bootstr
 ```bash
 npm run bootstrap
 ```
-
 ## Build and Deploy
-TODO
+1. Скачиваем все зависимости
+ ```bash 
+ npm run bootstrap 
+ ```
+2. Билдим и диплоим проект
+```bash 
+lerna run --scope <имя пакета> deploy
+ ```
+#### Requirements
+- Node 18 or newer 
+
+## Redeploy
+    TODO
+При вызове lerna run --scope <имя пакета> deploy используемый порт будет занят, что вызовет ошибку
+
 
 ## Как добавить новый пакет в монорепозиторий?
 [Создание](https://github.com/lerna/lerna/tree/main/commands/create#readme) нового пакета
@@ -21,4 +34,6 @@ lerna create <name>
 ```
 lerna import <path-to-external-repository>
 ```
+#### Важно!
+При добавлении нового пакета, необходимо добавить npm script deploy для билда и деплоя пакета.
 
