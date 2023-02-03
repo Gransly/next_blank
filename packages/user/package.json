@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@monorepo/ui-kit": "*",
-    "@bueno-systems/next-actuator": "^1.0.7",
+    "@bueno-systems/next-actuator": "1.0.7",
     "@next/font": "13.1.4",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
