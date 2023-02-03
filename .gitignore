@@ -15,4 +15,6 @@ lib/
 
 #Next
 .next
+.env.local
+.env.production
 

@@ -8,29 +8,16 @@ npm run dev
 ```
 Адресс dev сервера [http://localhost:3000](http://localhost:3000)
 
-## Документация
+## Env variables
+- .env.development - конфиги для локального dev сервера
+- .env.production  - конфиги для production сервера
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Build and Deploy
-1. Перед билдом необходимо скачать все зависимости из главного корня проекта
-```bash
-npm run bootstrap
+### Важно
+Базовые env переменные не доступны в браузере по умолчанию в угоду безопастности, для этого в названия переменой необходимо добавить NEXT_PUBLIC_ пример:
 ```
-Команду запускаем из директории ws-ssr-cloud-blank-fe
-2. Далее необходимо сбилдить next в папку .next (Папка билда настраиваеться в next.config.js)
-```bash
-npm run build
+NEXT_PUBLIC_ANALYTICS_ID=abcdefghijk
 ```
-Команду запускаем из директории user
-3. Запускаем наш билд и вы вилеколепны
-```bash
-npm run start
-```
-Команду запускаем из директории user
+Такая переменная будет подхватываться браузе и видна в бандле.
 
 ## ESlint
 Для проверки Eslint пакета next воодим команду 
