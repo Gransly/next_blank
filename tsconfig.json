@@ -1,51 +1,29 @@
 {
   "compilerOptions": {
-    // базовые настройки
-    "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "jsx": "preserve",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
     "baseUrl": ".",
-    "resolveJsonModule": true,
-
-    // оптимизация сборки
-    "isolatedModules": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "importHelpers": true,
-    "noEmitHelpers": true,
-
-    // настройки строгости
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": true,
-
-    // настройки чистоты кода
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedParameters": true,
-    "allowUnreachableCode": false,
-
-    // дополнительно
-    "removeComments": true,
-    "pretty": false
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "paths": {
-    "@/*": ["./src/*"]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
