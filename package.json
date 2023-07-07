@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ws-serenity/sass-styling": "^1.0.1",
     "clsx": "1.2.1",
     "date-fns": "2.29.3",
     "next": "13.2.3",
@@ -19,13 +20,13 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.3.1",
-    "@svgr/webpack": "7.0.0",
+    "@svgr/webpack": "8.0.1",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
-    "sass": "1.59.2",
+    "sass": "1.55.0",
     "svg-css-modules-loader": "^1.6.1",
     "typescript": "4.9.5"
   }
